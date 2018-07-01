@@ -3,8 +3,8 @@
     <div class="complete">
       <%= link_to "Mark as Complete", complete_project_task_path(@project, task.id), method: :patch %>
     </div>
-    <div class="task">
-      <p style="opasity: 0.4;"><strike><%= task.content %></strike></p>
+    <div class="todo_item">
+      <p style="opacity: 0.5;"><strike><%= task.content %></strike></p>
     </div>
     <div class="trash">
       <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?"} %>
