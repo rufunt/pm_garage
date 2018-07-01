@@ -14,6 +14,7 @@ class TasksController < ApplicationController
     else
       flash[:error] = "Task was not deleted."
     end
+    redirect_to @project
   end
   
   private
